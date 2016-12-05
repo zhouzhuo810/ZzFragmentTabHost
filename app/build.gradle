@@ -23,6 +23,5 @@ android {
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     compile 'com.android.support:appcompat-v7:24.2.1'
-    compile 'me.zhouzhuo.zzandroidutils:zz-android-utils:1.0.8'
     compile project(':zz-fragment-tabhost')
 }
