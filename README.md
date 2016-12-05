@@ -20,7 +20,7 @@ compile 'me.zhouzhuo.zzfragmenttabhost:zz-fragment-tabhost:1.0.1'
 ```
 
 
-![这里写图片描述](http://img.blog.csdn.net/20161205153241873)
+![这里写图片描述](https://github.com/zhouzhuo810/ZzFragmentTabHost/blob/master/zzfragmenttabhost.jpg)
 
 
 
