@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="ZzTab">
+        <attr name="zt_text_size_normal" format="dimension|reference"/>
+        <attr name="zt_text_size_selected" format="dimension|reference"/>
+        <attr name="zt_text_color_selected" format="color|reference"/>
+        <attr name="zt_text_color_normal" format="color|reference"/>
+        <attr name="zt_img_size_normal" format="dimension|reference"/>
+        <attr name="zt_img_size_selected" format="dimension|reference"/>
+        <attr name="zt_bg_color_selected" format="color|reference"/>
+        <attr name="zt_bg_color_normal" format="color|reference"/>
+        <attr name="zt_show_mark" format="boolean"/>
+        <attr name="zt_mark_text_color" format="color|reference"/>
+        <attr name="zt_mark_bg_color" format="color|reference"/>
+        <attr name="zt_mark_text_size" format="dimension|reference"/>
+        <attr name="zt_mark_default_number" format="integer"/>
+        <attr name="zt_mark_max_number" format="integer"/>
+        <attr name="zt_tab_img_selected" format="color|reference"/>
+        <attr name="zt_tab_img_normal" format="color|reference"/>
+        <attr name="zt_tab_text" format="string|reference"/>
+        <attr name="zt_selected" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="ZzMarkView">
+        <attr name="zmv_mark_text_size" format="dimension|reference"/>
+        <attr name="zmv_mark_text_color" format="color|reference"/>
+        <attr name="zmv_mark_bg_color" format="color|reference"/>
+        <attr name="zmv_mark_default_number" format="integer"/>
+        <attr name="zmv_mark_max_number" format="integer"/>
+    </declare-styleable>
+
+
+</resources>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <me.zhouzhuo.zzfragmenttabhost.ZzMarkView
+            android:layout_width="100px"
+            android:layout_height="100px"
+            app:zmv_mark_bg_color="@color/colorAccent"
+            app:zmv_mark_default_number="20"
+            app:zmv_mark_text_size="34px" />
+
+        <me.zhouzhuo.zzfragmenttabhost.ZzFragmentTabHost
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <me.zhouzhuo.zzfragmenttabhost.ZzTab
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:zt_bg_color_normal="@color/colorAccent"
+                app:zt_mark_bg_color="@color/colorAccent"
+                app:zt_tab_img_normal="@drawable/mainicon_normal"
+                app:zt_tab_img_selected="@drawable/mainicon_checked"
+                app:zt_tab_text="微信"
+                app:zt_text_color_selected="@color/colorAccent" />
+
+            <me.zhouzhuo.zzfragmenttabhost.ZzTab
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:zt_tab_img_normal="@drawable/mainicon_normal"
+                app:zt_tab_img_selected="@drawable/mainicon_checked"
+                app:zt_tab_text="通讯录" />
+
+            <me.zhouzhuo.zzfragmenttabhost.ZzTab
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:zt_tab_img_normal="@drawable/mainicon_normal"
+                app:zt_tab_img_selected="@drawable/mainicon_checked"
+                app:zt_tab_text="发现" />
+
+            <me.zhouzhuo.zzfragmenttabhost.ZzTab
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:zt_mark_default_number="1"
+                app:zt_tab_img_normal="@drawable/mainicon_normal"
+                app:zt_tab_img_selected="@drawable/mainicon_checked"
+                app:zt_tab_text="我" />
+
+            <me.zhouzhuo.zzfragmenttabhost.ZzTab
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:zt_mark_default_number="80"
+                app:zt_mark_text_size="30px"
+                app:zt_tab_img_normal="@drawable/mainicon_normal"
+                app:zt_tab_img_selected="@drawable/mainicon_checked"
+                app:zt_tab_text="我" />
+
+            <me.zhouzhuo.zzfragmenttabhost.ZzTab
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:zt_mark_default_number="100"
+                app:zt_mark_text_size="30px"
+                app:zt_tab_img_normal="@drawable/mainicon_normal"
+                app:zt_tab_img_selected="@drawable/mainicon_checked"
+                app:zt_tab_text="我" />
+
+            <me.zhouzhuo.zzfragmenttabhost.ZzTab
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:zt_bg_color_normal="@color/colorAccent"
+                app:zt_bg_color_selected="@android:color/darker_gray"
+                app:zt_img_size_normal="80px"
+                app:zt_img_size_selected="100px"
+                app:zt_mark_bg_color="@color/colorPrimary"
+                app:zt_mark_default_number="100"
+                app:zt_mark_text_color="@color/colorAccent"
+                app:zt_mark_text_size="30px"
+                app:zt_selected="false"
+                app:zt_show_mark="true"
+                app:zt_tab_img_normal="@drawable/mainicon_normal"
+                app:zt_tab_img_selected="@drawable/mainicon_checked"
+                app:zt_tab_text="我"
+                app:zt_text_color_normal="@android:color/white"
+                app:zt_text_color_selected="@color/colorPrimary"
+                app:zt_text_size_normal="30px"
+                app:zt_text_size_selected="40px" />
+        </me.zhouzhuo.zzfragmenttabhost.ZzFragmentTabHost>
+
+        <me.zhouzhuo.zzfragmenttabhost.ZzFragmentTabHost
+            android:id="@+id/zft"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+        </me.zhouzhuo.zzfragmenttabhost.ZzFragmentTabHost>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="orderPic"
+            android:text="图片正序" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="reorderPic"
+            android:text="图片倒序" />
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="updateName"
+            android:text="更新tab名称" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="showMark"
+            android:text="显示所有mark" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="hideMark"
+            android:text="隐藏所有mark" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="hideMarkOne"
+            android:text="隐藏第1个mark" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="changeMarkValue"
+            android:text="改变所有mark值" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="changeMarkValueOne"
+            android:text="改变第2个mark值" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="fgm"
+            android:text="Fragment示例" />
+    </LinearLayout>
+</ScrollView>
